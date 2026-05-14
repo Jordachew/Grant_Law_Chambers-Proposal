@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QBO Implementation Proposal | Grant Law Chambers x JW Solution</title>
+    <title>QBO Implementation Proposal | Grant Law Chambers — JW Solution × DAS Consulting</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{gold:{50:"#fefce8",100:"#fef9c3",400:"#E8CC6A",500:"#C9A84C",600:"#a88020",700:"#8B6914"}}}}}</script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Chosen Palette: Legal Professional (Slate-50, Navy/Blue-900, JW-Red-700) -->
     <!-- Application Structure Plan: The SPA is designed as a "Rapid Digital Implementation Roadmap." The architecture is compressed into two high-impact weeks. The flow is: Executive Summary -> Accelerated Roadmap -> Technical Setup Deep-Dive -> Final Investment. This structure emphasizes speed to value while maintaining the professional rigor expected by a legal firm. -->
@@ -23,7 +24,7 @@
             transition: all 0.4s ease;
         }
         .active-node {
-            border-color: #b91c1c;
+            border-color: #C9A84C;
             background-color: #fef2f2;
             transform: scale(1.05);
         }
@@ -45,35 +46,37 @@
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div class="h-1.5 flex w-full">
             <div class="bg-slate-900 w-1/4"></div>
-            <div class="bg-red-700 w-3/4"></div>
+            <div class="bg-gold-500 w-3/4"></div>
         </div>
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <div class="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-lg border-2 border-red-700">JW</div>
+            <!-- Joint venture identity -->
+            <div class="flex items-center gap-3 flex-wrap">
+                <!-- JW brand -->
+                <div class="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-base border-2 border-gold-500 shrink-0">JW</div>
+                <div class="mr-1">
+                    <p class="font-extrabold text-[11px] tracking-widest uppercase text-slate-900 leading-none">JW Business Solution</p>
+                    <p class="text-[8px] text-slate-400 uppercase font-semibold tracking-tight mt-0.5">Financial Systems</p>
+                </div>
+                <!-- Divider -->
+                <span class="text-slate-300 font-light text-lg mx-1">×</span>
+                <!-- DAS brand -->
+                <div class="relative w-10 h-10 shrink-0">
+                    <div class="absolute inset-0 rounded-full border-2" style="border-color:#C9A84C;"></div>
+                    <div class="absolute inset-[3px] rounded-full border" style="border-color:#C9A84C;opacity:0.6;"></div>
+                    <div class="absolute inset-0 flex items-center justify-center font-serif font-bold text-base" style="color:#C9A84C;">D</div>
+                </div>
                 <div>
-                    <p class="font-extrabold text-xs tracking-widest uppercase text-slate-900">JW Business Solution</p>
-                    <p class="text-[9px] text-slate-500 uppercase font-bold tracking-tight">Financial Systems Implementation</p>
+                    <p class="font-extrabold text-[11px] tracking-widest uppercase leading-none" style="color:#C9A84C;">DAS Consulting</p>
+                    <p class="text-[8px] text-slate-400 uppercase font-semibold tracking-tight mt-0.5">Joint Venture</p>
                 </div>
             </div>
-            <div class="flex items-center gap-6">
-                <nav class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-600">
-                    <a href="#summary" class="hover:text-red-700 transition-colors">The Brief</a>
-                    <a href="#roadmap" class="hover:text-red-700 transition-colors">Timeline</a>
-                    <a href="#technical" class="hover:text-red-700 transition-colors">Setup</a>
-                    <a href="#investment" class="hover:text-red-700 transition-colors">Investment</a>
-                </nav>
-                <div class="hidden sm:flex items-center gap-3 pl-4 border-l border-slate-200">
-                    <div class="relative w-9 h-9 shrink-0">
-                        <div class="absolute inset-0 rounded-full border-[1.5px]" style="border-color:#C9A84C;"></div>
-                        <div class="absolute inset-[3px] rounded-full border" style="border-color:#C9A84C;opacity:0.65;"></div>
-                        <div class="absolute inset-0 flex items-center justify-center font-serif font-bold text-base" style="color:#C9A84C;">D</div>
-                    </div>
-                    <div>
-                        <p class="font-extrabold text-[10px] tracking-[0.12em] uppercase leading-none" style="color:#C9A84C;">DAS Consulting</p>
-                        <p class="text-[8px] uppercase tracking-wider mt-0.5 text-slate-400 font-semibold">In Partnership</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Nav -->
+            <nav class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-600">
+                <a href="#summary" class="hover:text-gold-500 transition-colors">The Brief</a>
+                <a href="#roadmap" class="hover:text-gold-500 transition-colors">Timeline</a>
+                <a href="#technical" class="hover:text-gold-500 transition-colors">Setup</a>
+                <a href="#investment" class="hover:text-gold-500 transition-colors">Investment</a>
+            </nav>
         </div>
     </header>
 
@@ -82,7 +85,7 @@
         <!-- Executive Summary -->
         <section id="summary" class="animate-in fade-in duration-700">
             <div class="max-w-3xl">
-                <p class="text-red-700 font-bold uppercase tracking-[0.2em] text-[10px] mb-4">Strategic Proposal</p>
+                <p class="text-gold-500 font-bold uppercase tracking-[0.2em] text-[10px] mb-4">Strategic Proposal</p>
                 <h1 class="text-5xl font-extrabold text-slate-900 leading-tight mb-8">
                     QBO Digital Transformation for <span class="text-slate-700">Grant Law Chambers.</span>
                 </h1>
@@ -91,7 +94,7 @@
                 </p>
                 <div class="inline-flex items-center gap-3 px-4 py-2 bg-slate-900 text-white rounded-full text-xs font-bold uppercase tracking-widest">
                     <span>Target Outcome:</span>
-                    <span class="text-red-400">Total System Readiness & Custom BI in 2 Weeks</span>
+                    <span class="text-gold-400">Total System Readiness & Custom BI in 2 Weeks</span>
                 </div>
             </div>
         </section>
@@ -131,28 +134,28 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div class="space-y-4">
                     <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex gap-4">
-                        <div class="text-red-700 font-bold text-xl">01</div>
+                        <div class="text-gold-500 font-bold text-xl">01</div>
                         <div>
                             <h4 class="font-bold text-slate-900 mb-1">Legal-Centric COA Design</h4>
                             <p class="text-xs text-slate-500">Categorization tailored for law firms, tracking income by practice area and reimbursable client costs.</p>
                         </div>
                     </div>
                     <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex gap-4">
-                        <div class="text-red-700 font-bold text-xl">02</div>
+                        <div class="text-gold-500 font-bold text-xl">02</div>
                         <div>
                             <h4 class="font-bold text-slate-900 mb-1">Opening Balance Migration</h4>
                             <p class="text-xs text-slate-500">Rigorous audit and migration of historical balances to ensure total data continuity and audit-readiness.</p>
                         </div>
                     </div>
                     <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex gap-4">
-                        <div class="text-red-700 font-bold text-xl">03</div>
+                        <div class="text-gold-500 font-bold text-xl">03</div>
                         <div>
                             <h4 class="font-bold text-slate-900 mb-1">Trust/Escrow Account Integrity</h4>
                             <p class="text-xs text-slate-500">Specific configuration for Client Trust accounts to ensure zero co-mingling and effortless three-way reconciliation.</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-white rounded-2xl border border-red-100 bg-red-50 shadow-sm flex gap-4">
-                        <div class="text-red-700 font-bold text-xl">04</div>
+                    <div class="p-6 bg-white rounded-2xl border border-gold-100 bg-gold-50 shadow-sm flex gap-4">
+                        <div class="text-gold-500 font-bold text-xl">04</div>
                         <div>
                             <h4 class="font-bold text-slate-900 mb-1">Management & Custom Reporting</h4>
                             <p class="text-xs text-slate-500">Automated "Management Packs" including P&L by Attorney, Aging A/R by Case, and Trust Compliance Reports.</p>
@@ -192,19 +195,19 @@
                     </p>
                     <div class="space-y-6">
                         <div class="flex gap-4 items-center">
-                            <div class="w-2 h-2 rounded-full bg-red-700"></div>
+                            <div class="w-2 h-2 rounded-full bg-gold-500"></div>
                             <p class="text-sm">Comprehensive System Configuration & Logic</p>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <div class="w-2 h-2 rounded-full bg-red-700"></div>
+                            <div class="w-2 h-2 rounded-full bg-gold-500"></div>
                             <p class="text-sm">Historical Data Migration & Audit</p>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <div class="w-2 h-2 rounded-full bg-red-700"></div>
+                            <div class="w-2 h-2 rounded-full bg-gold-500"></div>
                             <p class="text-sm">Custom Management Report Pack Design</p>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <div class="w-2 h-2 rounded-full bg-red-700"></div>
+                            <div class="w-2 h-2 rounded-full bg-gold-500"></div>
                             <p class="text-sm">Executive Handover & Dashboard Training</p>
                         </div>
                     </div>
@@ -212,14 +215,14 @@
 
                 <div class="bg-white/5 backdrop-blur-md rounded-[2.5rem] p-10 border border-white/10 text-center">
                     <div class="py-4 border-b border-white/10 mb-8">
-                        <h4 class="text-sm font-bold uppercase tracking-widest text-red-500">Professional Implementation Fee</h4>
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-gold-400">Professional Implementation Fee</h4>
                     </div>
 
                     <p class="text-slate-500 uppercase tracking-widest text-[9px] font-bold mb-2">Total Project Investment</p>
                     <h3 class="text-6xl font-extrabold mb-10 tracking-tighter">JMD $135k</h3>
                     
                     <div class="text-left space-y-4 bg-black/30 p-6 rounded-2xl border border-white/5">
-                        <p class="text-[10px] font-bold text-red-500 uppercase mb-2 tracking-widest">Turnkey Inclusions</p>
+                        <p class="text-[10px] font-bold text-gold-400 uppercase mb-2 tracking-widest">Turnkey Inclusions</p>
                         <ul id="price-list" class="space-y-3 text-xs text-slate-300">
                             <li>✓ Turnkey QBO Setup & Customization</li>
                             <li>✓ Full Custom Management Report Pack</li>
@@ -237,17 +240,24 @@
     <footer class="bg-slate-950 text-slate-500 py-16 border-t border-white/5">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
             <div>
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-slate-900 font-bold text-sm border border-red-700">JW</div>
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-slate-900 font-bold text-sm border-2 border-gold-500">JW</div>
                     <span class="text-white font-extrabold tracking-tighter text-lg">JW SOLUTION</span>
+                    <span class="text-slate-600 font-light">×</span>
+                    <div class="relative w-8 h-8 shrink-0">
+                        <div class="absolute inset-0 rounded-full border-2" style="border-color:#C9A84C;"></div>
+                        <div class="absolute inset-[2px] rounded-full border" style="border-color:#C9A84C;opacity:0.55;"></div>
+                        <div class="absolute inset-0 flex items-center justify-center font-serif font-bold text-sm" style="color:#C9A84C;">D</div>
+                    </div>
+                    <span class="font-extrabold tracking-widest text-sm uppercase" style="color:#C9A84C;">DAS CONSULTING</span>
                 </div>
                 <p class="text-xs max-w-xs leading-relaxed">
-                    Financial systems architect specializing in professional services and legal entities.
+                    A joint venture delivering financial systems and strategic advisory for professional and legal entities.
                 </p>
             </div>
             <div class="flex flex-col md:flex-row gap-8 items-center text-[10px] font-bold uppercase tracking-[0.2em]">
-                <a href="mailto:jwsolutions4you@gmail.com" class="hover:text-red-500 transition-colors">jwsolutions4you@gmail.com</a>
-                <a href="tel:+18768899206" class="hover:text-red-500 transition-colors">+1 (876) 889-9206</a>
+                <a href="mailto:jwsolutions4you@gmail.com" class="hover:text-gold-400 transition-colors">jwsolutions4you@gmail.com</a>
+                <a href="tel:+18768899206" class="hover:text-gold-400 transition-colors">+1 (876) 889-9206</a>
             </div>
         </div>
     </footer>
@@ -306,7 +316,7 @@
             data.milestones.forEach(m => {
                 const li = document.createElement('li');
                 li.className = 'flex items-center gap-2 text-xs text-slate-600 bg-white p-2 rounded-lg border border-slate-100 shadow-sm';
-                li.innerHTML = `<span class="text-red-700 font-bold">&#10003;</span> ${m}`;
+                li.innerHTML = `<span class="text-gold-500 font-bold">&#10003;</span> ${m}`;
                 list.appendChild(li);
             });
         }
@@ -322,7 +332,7 @@
                     datasets: [{
                         label: 'Speed to Financial Insight',
                         data: [15, 98],
-                        backgroundColor: ['#475569', '#b91c1c'],
+                        backgroundColor: ['#475569', '#C9A84C'],
                         borderRadius: 8
                     }]
                 },
